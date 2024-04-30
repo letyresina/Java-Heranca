@@ -60,7 +60,8 @@ public class Funcionario {
 		return salario;
 	}
 	
-	 public int calculaIdadeCompleta(LocalDate dataAtual) {
+	 public int calculaIdade() {
+		 LocalDate dataAtual = LocalDate.now();
          Period periodo = Period.between(dataNasc, dataAtual);
          
          int idade = periodo.getYears();

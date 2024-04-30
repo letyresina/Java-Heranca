@@ -23,7 +23,7 @@ public class Gerente extends Funcionario{
 	}
 	
 	public float calculaSalario() {
-		float salario = (super.getValorHoraTrabalho() * 40) * 4 * (1 + bonus / 100);
+		float salario = ((super.getValorHoraTrabalho() * 40) * 4) * (1 + bonus / 100);
 		return salario;
 	}
 }
